@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AllCategoryActivity">
+
+    <TextView
+        android:id="@+id/txtSelectOfAllCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Chọn loại sản phẩm"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:fontFamily="@font/open_sans"
+        app:layout_constraintBottom_toBottomOf="@+id/imgArrowBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgArrowBack"
+        app:layout_constraintTop_toTopOf="@+id/imgArrowBack" />
+
+    <ImageView
+        android:id="@+id/imgArrowBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allCategoryRecycler"
+        android:layout_width="409dp"
+        android:layout_height="665dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSelectOfAllCategory" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSelectOfAllCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSelectOfAllCategory"
+        app:layout_constraintTop_toTopOf="@+id/txtSelectOfAllCategory"
+        app:srcCompat="@drawable/ic_cart_black" />
+</androidx.constraintlayout.widget.ConstraintLayout>
